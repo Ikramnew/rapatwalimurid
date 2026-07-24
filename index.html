@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapat Wali Murid — SDIT Tarbiyatul Ummah 2026/2027</title>
+
+<!-- ===================== FONTS ===================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- ===================== ICONS ===================== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- ===================== STYLESHEET ===================== -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ======================================================
+     BACKGROUND PATTERN (islamic geometric, tipis, global)
+====================================================== -->
+<div class="pattern-overlay" aria-hidden="true"></div>
+
+<!-- ======================================================
+     TOP CHROME: progress bar + section indicator + slide no
+====================================================== -->
+<div class="top-chrome">
+  <div class="progress-track" id="progressTrack">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+  <div class="chrome-row">
+    <div class="section-indicator" id="sectionIndicator">
+      <span class="dot-mark"></span>
+      <span id="sectionLabel">Pembukaan</span>
+    </div>
+    <div class="slide-counter">
+      <span id="slideCurrent">01</span>
+      <span class="counter-sep">/</span>
+      <span id="slideTotal">15</span>
+    </div>
+  </div>
+</div>
+
+<!-- ======================================================
+     DECK
+====================================================== -->
+<main class="deck" id="deck">
+
+  <!-- ================= SLIDE 1 — COVER ================= -->
+  <section class="slide" data-section="Pembukaan">
+    <div class="slide-inner cover-slide">
+      <div class="cover-logo">
+        <div class="logo-ring"><i class="fa-solid fa-mosque"></i></div>
+      </div>
+      <p class="eyebrow">Rapat Wali Murid</p>
+      <h1 class="cover-title">SDIT Tarbiyatul<br>Ummah</h1>
+      <div class="gold-divider"></div>
+      <p class="cover-subtitle">Tahun Ajaran 2026 / 2027</p>
+      <p class="cover-quote">&ldquo;Anak adalah amanah yang Allah titipkan kepada orang tua,<br>dan sekolah hadir untuk menemani amanah itu tumbuh.&rdquo;</p>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 2 — PROFIL SEKOLAH ================= -->
+  <section class="slide" data-section="Profil Sekolah">
+    <div class="slide-inner">
+      <p class="eyebrow">Mengenal Kami</p>
+      <h2 class="slide-title">Profil SDIT Tarbiyatul Ummah</h2>
+      <div class="gold-divider small"></div>
+
+      <div class="profil-grid">
+        <div class="profil-col">
+          <div class="mini-card">
+            <h3><i class="fa-solid fa-clock-rotate-left"></i> Sejarah Singkat</h3>
+            <p class="placeholder-text">SDIT Tarbiyatul Ummah berdiri sebagai wujud ikhtiar bersama untuk menghadirkan pendidikan yang memadukan keimanan, akhlak, dan ilmu pengetahuan. Sejak awal berdiri, sekolah terus tumbuh bersama kepercayaan para orang tua. <em>(teks dapat disesuaikan)</em></p>
+          </div>
+          <div class="mini-card">
+            <h3><i class="fa-solid fa-id-card"></i> Identitas Sekolah</h3>
+            <ul class="identity-list">
+              <li><span>NPSN</span><b>xxxxxxxx</b></li>
+              <li><span>Status</span><b>Terakreditasi</b></li>
+              <li><span>Alamat</span><b>Jl. Placeholder No. 00</b></li>
+              <li><span>Tahun Berdiri</span><b>20xx</b></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="profil-col">
+          <div class="mini-card">
+            <h3><i class="fa-solid fa-chalkboard-user"></i> Profil Guru</h3>
+            <div class="teacher-grid">
+              <div class="teacher-card">
+                <div class="teacher-photo"><i class="fa-solid fa-user"></i></div>
+                <p class="teacher-name">Nama Guru</p>
+                <p class="teacher-role">Kepala Sekolah</p>
+              </div>
+              <div class="teacher-card">
+                <div class="teacher-photo"><i class="fa-solid fa-user"></i></div>
+                <p class="teacher-name">Nama Guru</p>
+                <p class="teacher-role">Wali Kelas</p>
+              </div>
+              <div class="teacher-card">
+                <div class="teacher-photo"><i class="fa-solid fa-user"></i></div>
+                <p class="teacher-name">Nama Guru</p>
+                <p class="teacher-role">Guru Tahfidz</p>
+              </div>
+              <div class="teacher-card">
+                <div class="teacher-photo"><i class="fa-solid fa-user"></i></div>
+                <p class="teacher-name">Nama Guru</p>
+                <p class="teacher-role">Guru Tahsin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 3 — VISI & MISI (MUMTAZ) ================= -->
+  <section class="slide" data-section="Visi & Misi">
+    <div class="slide-inner">
+      <p class="eyebrow">Arah Pendidikan Kami</p>
+      <h2 class="slide-title">Visi &amp; Misi</h2>
+      <div class="gold-divider small"></div>
+
+      <p class="visi-text">Menjadi lembaga yang <b>Mumtaz</b> — istimewa dan unggul — dalam membentuk generasi yang berkarakter, cerdas, dan berdaya saing global.</p>
+
+      <div class="mumtaz-grid">
+        <div class="mumtaz-card"><span class="mumtaz-letter">M</span><p>Membangun karakter dan akhlak mulia</p></div>
+        <div class="mumtaz-card"><span class="mumtaz-letter">U</span><p>Unggul dalam akademik</p></div>
+        <div class="mumtaz-card"><span class="mumtaz-letter">M</span><p>Memfasilitasi potensi setiap anak</p></div>
+        <div class="mumtaz-card"><span class="mumtaz-letter">T</span><p>Terdepan dalam teknologi</p></div>
+        <div class="mumtaz-card"><span class="mumtaz-letter">A</span><p>Aktif berkontribusi bagi masyarakat</p></div>
+        <div class="mumtaz-card"><span class="mumtaz-letter">Z</span><p>Zaman-oriented, siap menghadapi masa depan</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 4 — KALENDER PENDIDIKAN (FULL IMAGE) ================= -->
+  <section class="slide" data-section="Kalender Pendidikan">
+    <div class="slide-inner image-slide">
+      <p class="eyebrow">Perencanaan Tahun Ajaran</p>
+      <h2 class="slide-title">Kalender Pendidikan</h2>
+      <div class="gold-divider small"></div>
+      <div class="full-image-frame">
+        <img src="https://placehold.co/1600x900/0B3B2E/C9A24B?text=Kalender+Pendidikan+2026%2F2027&font=raleway" alt="Kalender Pendidikan" id="kalenderImage">
+      </div>
+      <p class="image-hint"><i class="fa-solid fa-circle-info"></i> Ganti atribut <code>src</code> pada elemen <code>#kalenderImage</code> dengan gambar kalender pendidikan Anda.</p>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 5 — OUTPUT LULUSAN ================= -->
+  <section class="slide" data-section="Output Lulusan">
+    <div class="slide-inner">
+      <p class="eyebrow">Profil Kelulusan</p>
+      <h2 class="slide-title">Output Lulusan</h2>
+      <div class="gold-divider small"></div>
+
+      <div class="icon-grid">
+        <div class="icon-card"><i class="fa-solid fa-hands-praying"></i><p>Berakidah Lurus</p></div>
+        <div class="icon-card"><i class="fa-solid fa-book-quran"></i><p>Berakhlak Qur'ani</p></div>
+        <div class="icon-card"><i class="fa-solid fa-person-walking-arrow-right"></i><p>Mandiri</p></div>
+        <div class="icon-card"><i class="fa-solid fa-list-check"></i><p>Disiplin</p></div>
+        <div class="icon-card"><i class="fa-solid fa-face-smile"></i><p>Percaya Diri</p></div>
+        <div class="icon-card"><i class="fa-solid fa-people-group"></i><p>Leadership</p></div>
+        <div class="icon-card"><i class="fa-solid fa-hand-holding-heart"></i><p>Life Skill</p></div>
+        <div class="icon-card"><i class="fa-solid fa-laptop-code"></i><p>Teknologi</p></div>
+        <div class="icon-card"><i class="fa-solid fa-graduation-cap"></i><p>Akademik</p></div>
+        <div class="icon-card"><i class="fa-solid fa-book-open"></i><p>Tahfidz</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 6 — TARGET PEMBELAJARAN PER KELAS ================= -->
+  <section class="slide" data-section="Target Pembelajaran">
+    <div class="slide-inner">
+      <p class="eyebrow">Capaian Belajar</p>
+      <h2 class="slide-title">Target Pembelajaran per Kelas</h2>
+      <div class="gold-divider small"></div>
+
+      <div class="table-wrap">
+        <table class="modern-table">
+          <thead>
+            <tr><th>Kelas</th><th>Target Akademik</th><th>Target Tahfidz</th><th>Target Karakter</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="kelas-badge">1</span></td><td>Placeholder target</td><td>Placeholder target</td><td>Placeholder target</td></tr>
+            <tr><td><span class="kelas-badge">2</span></td><td>Placeholder target</td><td>Placeholder target</td><td>Placeholder target</td></tr>
+            <tr><td><span class="kelas-badge">3</span></td><td>Placeholder target</td><td>Placeholder target</td><td>Placeholder target</td></tr>
+            <tr><td><span class="kelas-badge">4</span></td><td>Placeholder target</td><td>Placeholder target</td><td>Placeholder target</td></tr>
+            <tr><td><span class="kelas-badge">5</span></td><td>Placeholder target</td><td>Placeholder target</td><td>Placeholder target</td></tr>
+            <tr><td><span class="kelas-badge">6</span></td><td>Placeholder target</td><td>Placeholder target</td><td>Placeholder target</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 7 — JADWAL PELAJARAN (TIMELINE) ================= -->
+  <section class="slide" data-section="Jadwal Pelajaran">
+    <div class="slide-inner">
+      <p class="eyebrow">Kegiatan Harian</p>
+      <h2 class="slide-title">Jadwal Pelajaran</h2>
+      <div class="gold-divider small"></div>
+
+      <div class="timeline">
+        <div class="timeline-item"><div class="tl-icon"><i class="fa-solid fa-door-open"></i></div><div class="tl-text"><b>07.00</b><span>Jam Masuk</span></div></div>
+        <div class="timeline-item"><div class="tl-icon"><i class="fa-solid fa-chalkboard"></i></div><div class="tl-text"><b>07.15</b><span>Jam Pelajaran</span></div></div>
+        <div class="timeline-item"><div class="tl-icon"><i class="fa-solid fa-mug-hot"></i></div><div class="tl-text"><b>09.30</b><span>Istirahat</span></div></div>
+        <div class="timeline-item"><div class="tl-icon"><i class="fa-solid fa-microphone-lines"></i></div><div class="tl-text"><b>10.00</b><span>Tahsin</span></div></div>
+        <div class="timeline-item"><div class="tl-icon"><i class="fa-solid fa-book-open-reader"></i></div><div class="tl-text"><b>10.30</b><span>Tahfidz</span></div></div>
+        <div class="timeline-item"><div class="tl-icon"><i class="fa-solid fa-mosque"></i></div><div class="tl-text"><b>12.00</b><span>Dzuhur Berjamaah</span></div></div>
+        <div class="timeline-item"><div class="tl-icon"><i class="fa-solid fa-house"></i></div><div class="tl-text"><b>13.00</b><span>Pulang</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 8 — KELOMPOK TAHSIN ================= -->
+  <section class="slide" data-section="Kelompok Tahsin">
+    <div class="slide-inner">
+      <p class="eyebrow">Pembinaan Bacaan Al-Qur'an</p>
+      <h2 class="slide-title">Kelompok Tahsin</h2>
+      <div class="gold-divider small"></div>
+
+      <div class="level-grid">
+        <div class="level-card"><span class="level-tag">Level A</span><p class="placeholder-text">Kriteria &amp; target placeholder</p></div>
+        <div class="level-card"><span class="level-tag">Level B</span><p class="placeholder-text">Kriteria &amp; target placeholder</p></div>
+        <div class="level-card"><span class="level-tag">Level C</span><p class="placeholder-text">Kriteria &amp; target placeholder</p></div>
+        <div class="level-card"><span class="level-tag">Level D</span><p class="placeholder-text">Kriteria &amp; target placeholder</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 9 — KELOMPOK TAHFIDZ ================= -->
+  <section class="slide" data-section="Kelompok Tahfidz">
+    <div class="slide-inner">
+      <p class="eyebrow">Pembinaan Hafalan Al-Qur'an</p>
+      <h2 class="slide-title">Kelompok Tahfidz</h2>
+      <div class="gold-divider small"></div>
+
+      <div class="halaqah-grid">
+        <div class="halaqah-card">
+          <h3><i class="fa-solid fa-book-quran"></i> Halaqah 1</h3>
+          <ul>
+            <li><span>Musyrif</span><b>Nama Musyrif</b></li>
+            <li><span>Target</span><b>Juz placeholder</b></li>
+            <li><span>Jumlah Siswa</span><b>xx siswa</b></li>
+          </ul>
+        </div>
+        <div class="halaqah-card">
+          <h3><i class="fa-solid fa-book-quran"></i> Halaqah 2</h3>
+          <ul>
+            <li><span>Musyrif</span><b>Nama Musyrif</b></li>
+            <li><span>Target</span><b>Juz placeholder</b></li>
+            <li><span>Jumlah Siswa</span><b>xx siswa</b></li>
+          </ul>
+        </div>
+        <div class="halaqah-card">
+          <h3><i class="fa-solid fa-book-quran"></i> Halaqah 3</h3>
+          <ul>
+            <li><span>Musyrif</span><b>Nama Musyrif</b></li>
+            <li><span>Target</span><b>Juz placeholder</b></li>
+            <li><span>Jumlah Siswa</span><b>xx siswa</b></li>
+          </ul>
+        </div>
+        <div class="halaqah-card">
+          <h3><i class="fa-solid fa-book-quran"></i> Halaqah 4</h3>
+          <ul>
+            <li><span>Musyrif</span><b>Nama Musyrif</b></li>
+            <li><span>Target</span><b>Juz placeholder</b></li>
+            <li><span>Jumlah Siswa</span><b>xx siswa</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 10 — BUDAYA SEKOLAH ================= -->
+  <section class="slide" data-section="Budaya Sekolah">
+    <div class="slide-inner">
+      <p class="eyebrow">Nilai Keseharian</p>
+      <h2 class="slide-title">Budaya Sekolah</h2>
+      <div class="gold-divider small"></div>
+
+      <div class="culture-grid">
+        <div class="culture-item"><i class="fa-solid fa-face-smile"></i><span>Senyum</span></div>
+        <div class="culture-item"><i class="fa-solid fa-hand-peace"></i><span>Salam</span></div>
+        <div class="culture-item"><i class="fa-solid fa-comments"></i><span>Sapa</span></div>
+        <div class="culture-item"><i class="fa-solid fa-heart"></i><span>Sopan</span></div>
+        <div class="culture-item"><i class="fa-solid fa-leaf"></i><span>Santun</span></div>
+        <div class="culture-item"><i class="fa-solid fa-book-quran"></i><span>Tilawah</span></div>
+        <div class="culture-item"><i class="fa-solid fa-rotate"></i><span>Murajaah</span></div>
+        <div class="culture-item"><i class="fa-solid fa-mosque"></i><span>Shalat</span></div>
+        <div class="culture-item"><i class="fa-solid fa-clock"></i><span>Disiplin</span></div>
+        <div class="culture-item"><i class="fa-solid fa-broom"></i><span>Kebersihan</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 11 — INFORMASI SERAGAM ================= -->
+  <section class="slide" data-section="Informasi Seragam">
+    <div class="slide-inner">
+      <p class="eyebrow">Ketentuan Berpakaian</p>
+      <h2 class="slide-title">Informasi Seragam</h2>
+      <div class="gold-divider small"></div>
+
+      <div class="uniform-grid">
+        <div class="uniform-card"><div class="uniform-photo"><i class="fa-solid fa-shirt"></i></div><p>Senin</p></div>
+        <div class="uniform-card"><div class="uniform-photo"><i class="fa-solid fa-shirt"></i></div><p>Selasa</p></div>
+        <div class="uniform-card"><div class="uniform-photo"><i class="fa-solid fa-shirt"></i></div><p>Rabu</p></div>
+        <div class="uniform-card"><div class="uniform-photo"><i class="fa-solid fa-shirt"></i></div><p>Kamis</p></div>
+        <div class="uniform-card"><div class="uniform-photo"><i class="fa-solid fa-shirt"></i></div><p>Jumat</p></div>
+        <div class="uniform-card"><div class="uniform-photo"><i class="fa-solid fa-person-running"></i></div><p>Olahraga</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 12 — ATURAN SISWA ================= -->
+  <section class="slide" data-section="Aturan Siswa">
+    <div class="slide-inner">
+      <p class="eyebrow">Tata Tertib</p>
+      <h2 class="slide-title">Aturan Siswa</h2>
+      <div class="gold-divider small"></div>
+
+      <div class="rules-columns">
+        <div class="rules-col rules-good">
+          <h3><i class="fa-solid fa-circle-check"></i> Yang Harus Dilakukan</h3>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Datang tepat waktu</li>
+            <li><i class="fa-solid fa-check"></i> Berpakaian rapi sesuai jadwal</li>
+            <li><i class="fa-solid fa-check"></i> Membawa perlengkapan belajar</li>
+            <li><i class="fa-solid fa-check"></i> Bersikap sopan pada guru &amp; teman</li>
+            <li><i class="fa-solid fa-check"></i> Menjaga kebersihan kelas</li>
+          </ul>
+        </div>
+        <div class="rules-col rules-bad">
+          <h3><i class="fa-solid fa-circle-xmark"></i> Yang Tidak Boleh Dilakukan</h3>
+          <ul>
+            <li><i class="fa-solid fa-xmark"></i> Membawa gawai tanpa izin</li>
+            <li><i class="fa-solid fa-xmark"></i> Terlambat tanpa keterangan</li>
+            <li><i class="fa-solid fa-xmark"></i> Berkata tidak sopan</li>
+            <li><i class="fa-solid fa-xmark"></i> Membuang sampah sembarangan</li>
+            <li><i class="fa-solid fa-xmark"></i> Meninggalkan kelas tanpa izin</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 13 — KOMITMEN ORANG TUA ================= -->
+  <section class="slide" data-section="Komitmen Orang Tua">
+    <div class="slide-inner">
+      <p class="eyebrow">Sinergi Sekolah &amp; Keluarga</p>
+      <h2 class="slide-title">Komitmen Bersama Orang Tua &amp; Sekolah</h2>
+      <div class="gold-divider small"></div>
+
+      <div class="commitment-layout">
+        <ul class="commitment-list">
+          <li><i class="fa-solid fa-square-check"></i> Mendampingi belajar di rumah</li>
+          <li><i class="fa-solid fa-square-check"></i> Murajaah hafalan bersama anak</li>
+          <li><i class="fa-solid fa-square-check"></i> Membiasakan shalat berjamaah</li>
+          <li><i class="fa-solid fa-square-check"></i> Aktif berkomunikasi dengan guru</li>
+          <li><i class="fa-solid fa-square-check"></i> Datang tepat waktu</li>
+        </ul>
+
+        <div class="signature-area">
+          <div class="signature-box"><span>Orang Tua / Wali</span></div>
+          <div class="signature-box"><span>Wali Kelas</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 14 — ANGGARAN SEKOLAH ================= -->
+  <section class="slide" data-section="Anggaran Sekolah">
+    <div class="slide-inner">
+      <p class="eyebrow">Perencanaan Biaya</p>
+      <h2 class="slide-title">Anggaran Sekolah</h2>
+      <div class="gold-divider small"></div>
+
+      <div class="budget-grid">
+        <div class="budget-card"><i class="fa-solid fa-money-bill-wave"></i><p>SPP</p><span>Rp. xxx.xxx</span></div>
+        <div class="budget-card"><i class="fa-solid fa-shirt"></i><p>Seragam</p><span>Rp. xxx.xxx</span></div>
+        <div class="budget-card"><i class="fa-solid fa-book"></i><p>Buku</p><span>Rp. xxx.xxx</span></div>
+        <div class="budget-card"><i class="fa-solid fa-calendar-days"></i><p>Kegiatan</p><span>Rp. xxx.xxx</span></div>
+        <div class="budget-card"><i class="fa-solid fa-futbol"></i><p>Ekstrakurikuler</p><span>Rp. xxx.xxx</span></div>
+        <div class="budget-card"><i class="fa-solid fa-ellipsis"></i><p>Lainnya</p><span>Rp. xxx.xxx</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDE 15 — PENUTUP ================= -->
+  <section class="slide" data-section="Penutup">
+    <div class="slide-inner closing-slide">
+      <i class="fa-solid fa-mosque closing-icon"></i>
+      <p class="closing-quote">&ldquo;Pendidikan terbaik lahir dari sinergi antara sekolah dan keluarga.&rdquo;</p>
+      <div class="gold-divider"></div>
+      <h2 class="closing-title">Terima Kasih</h2>
+      <p class="closing-school">SDIT Tarbiyatul Ummah</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================================================
+     BOTTOM CHROME: prev/next + dots + fullscreen
+====================================================== -->
+<div class="bottom-chrome">
+  <button class="nav-btn" id="prevBtn" aria-label="Slide sebelumnya">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <div class="dots" id="dotsContainer"></div>
+
+  <button class="nav-btn" id="nextBtn" aria-label="Slide berikutnya">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+</div>
+
+<button class="fullscreen-btn" id="fullscreenBtn" aria-label="Mode layar penuh">
+  <i class="fa-solid fa-expand"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
