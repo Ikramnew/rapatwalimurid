@@ -163,7 +163,15 @@ button{ font-family:inherit; cursor:pointer; border:none; background:none; }
   font-family:var(--font-heading); font-style:italic;
   font-size:17px; line-height:1.85; color:var(--hijau-tua-2);
 }
+.modern-table td ol {
+    margin: 0;
+    padding-left: 20px;
+}
 
+.modern-table td ol li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
 /* ---------------------- 7. GLASS / CARD BASE ---------------------- */
 .mini-card,.mumtaz-card,.icon-card,.level-card,.halaqah-card,
 .uniform-card,.budget-card,.teacher-card{
@@ -248,14 +256,91 @@ button{ font-family:inherit; cursor:pointer; border:none; background:none; }
 }
 .icon-card i{ font-size:26px; color:var(--emas); margin-bottom:12px; display:block; }
 .icon-card p{ font-size:13px; font-weight:600; color:var(--hijau-tua); }
+.btn-jadwal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #0b7a4b;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+}
+.teacher-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+
+  /* area scroll */
+  max-height:420px;
+  overflow-y:auto;
+  padding-right:8px;
+}
+
+
+/* scrollbar lebih elegan */
+.teacher-grid::-webkit-scrollbar{
+  width:6px;
+}
+
+.teacher-grid::-webkit-scrollbar-thumb{
+  background:var(--gold);
+  border-radius:10px;
+}
+
+
+.teacher-card{
+  padding:18px 10px;
+  text-align:center;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:rgba(201,162,75,0.05);
+}
+
+
+.teacher-photo{
+  width:70px;
+  height:70px;
+  margin:auto;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--gold);
+  color:var(--gold-soft);
+  font-size:25px;
+}
+.btn-jadwal:hover {
+  background: #095c39;
+  transform: translateY(-3px);
+}
+
 
 /* ---------------------- 12. SLIDE 6 — TABEL TARGET ---------------------- */
 .table-wrap{
-  border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-card);
+  border-radius:var(--radius-md);
+  box-shadow:var(--shadow-card);
   border:1px solid rgba(11,59,46,0.08);
+
+  overflow:auto;      /* Bisa scroll */
+  max-height:600px;   /* Tinggi maksimal */
 }
-.modern-table{ width:100%; border-collapse:collapse; background:rgba(255,255,255,0.75); }
-.modern-table thead th{
+.modern-table td {
+    vertical-align: top;
+    padding-top: 16px;
+}
+.modern-table{
+  width:100%;
+  min-width:1200px;   /* Agar bisa scroll horizontal */
+  border-collapse:collapse;
+  background:rgba(255,255,255,0.75);
+}.modern-table thead th{
+    position: sticky;
+  top: 0;
+  z-index: 10;
   background:var(--hijau-tua); color:var(--cream);
   font-size:12.5px; text-transform:uppercase; letter-spacing:.08em;
   font-weight:600; padding:15px 20px; text-align:left;
