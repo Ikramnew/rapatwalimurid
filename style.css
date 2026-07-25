@@ -143,12 +143,112 @@ button{ font-family:inherit; cursor:pointer; border:none; background:none; }
 /* ---------------------- 6. COVER SLIDE ---------------------- */
 .cover-slide{ text-align:center; display:flex; flex-direction:column; align-items:center; }
 .cover-logo{ margin-bottom:26px; }
+/* ================================
+   COVER LOGO
+================================ */
+
+.cover-logo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:25px;
+}
+
+
 .logo-ring{
-  width:92px; height:92px; border-radius:50%;
-  border:1.5px solid var(--emas);
-  display:flex; align-items:center; justify-content:center;
-  color:var(--emas); font-size:34px;
-  box-shadow:0 0 0 8px rgba(201,162,75,0.08);
+  width:140px;
+  height:140px;
+  border-radius:100%;
+  
+  /* Border tema gold */
+  border:2px solid var(--gold);
+  
+  /* Background transparan */
+  background:
+    radial-gradient(
+      circle,
+      rgba(201,162,75,0.15),
+      rgba(201,162,75,0.03)
+    );
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  overflow:hidden;
+  padding:12px;
+
+  position:relative;
+
+  box-shadow:
+    0 0 25px rgba(201,162,75,0.25);
+}
+
+
+/* Efek lingkaran dekorasi */
+.logo-ring::before{
+  content:"";
+  position:absolute;
+
+  width:100%;
+  height:100%;
+
+  border-radius:100%;
+
+  border:1px solid rgba(201,162,75,0.4);
+
+  top:6px;
+  left:6px;
+
+  pointer-events:none;
+}
+
+
+/* Gambar Logo */
+.logo-ring img{
+  width:100%;
+  height:100%;
+  border-radius: 100%;
+  object-fit:contain;
+
+  position:relative;
+  z-index:2;
+}
+
+
+/* Hover Effect */
+.logo-ring:hover{
+  transform:scale(1.05);
+  transition:.4s ease;
+
+  box-shadow:
+    0 0 35px rgba(201,162,75,0.45);
+}
+
+
+/* ================================
+   RESPONSIVE MOBILE
+================================ */
+
+@media(max-width:760px){
+
+  .cover-logo{
+    margin-bottom:20px;
+  }
+
+
+  .logo-ring{
+    width:110px;
+    height:110px;
+    padding:10px;
+  }
+
+
+  .logo-ring::before{
+    top:4px;
+    left:4px;
+  }
+
 }
 .cover-slide .eyebrow{ font-size:14px; }
 .cover-title{
